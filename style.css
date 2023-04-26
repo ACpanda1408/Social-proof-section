@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+body{
+  font-family: 'League Spartan', sans-serif;
+  color: hsl(300, 43%, 22%);
+  display: grid;
+  justify-content: center;
+}
+#text{
+  text-align: center;
+}
+.profile{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 1200;
+}
+#parent > *{
+  padding: 0 20px;
+}
+p{
+  line-height: 15pt;
+}
+.review{
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.review-container > *{
+  display: grid;
+  justify-content: center;
+}
+.review-container{
+  display: grid;
+  height: 200px;
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.verified-buyer{
+  color: hsl(333, 80%, 67%);
+}
+.cards{
+  margin-top: 5%;
+}
+.card{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.block{
+  display: inline-block;
+}
+h5{
+  line-height: 1.2em;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+@media only screen and (min-width: 730px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  #parent{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'a b'
+  }
+  #text{
+    grid-area: 'a';
+    text-align: left;
+    width: 400px;
+  }
+  .reviews{
+    grid-area: 'b';
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+  .card{
+    width: 280px;
+  }
+  .review-container{
+    width: auto;
+  }
+  .review2{
+    margin-left: 40px;
+  }
+  .review3{
+    margin-left: 80px;
+  }
+}
